@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.add("js")</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tumbao Revolver Club</title>
+  <meta name="description" content="Tumbao Revolver Club — discoteca y club nocturno. Música, tragos, botellas y botanas. Consulta nuestro menú y síguenos en redes.">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta property="og:title" content="Tumbao Revolver Club">
+  <meta property="og:description" content="Música, tragos y la mejor noche. Consulta nuestro menú y síguenos en redes.">
+  <meta property="og:image" content="assets/img/fachada.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600&family=Ultra&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Navegación ===== -->
+  <header class="nav" id="top">
+    <a href="#inicio" class="nav__brand" aria-label="Tumbao Revolver Club — inicio">
+      <img src="assets/img/logo-512.jpg" alt="" width="44" height="44">
+      <span>Tumbao</span>
+    </a>
+    <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="nav-links">
+      <a href="#club">El club</a>
+      <a href="#menu">Menú</a>
+      <a href="#galeria">Galería</a>
+      <a href="#redes">Redes</a>
+      <a href="#visitanos">Visítanos</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero__bg" role="img" aria-label="Fachada iluminada de Tumbao Revolver Club de noche"></div>
+      <div class="hero__content">
+        <h1 class="logo-type">
+          <span class="logo-type__main">Tumbao</span>
+          <span class="logo-type__sub">Revolver Club</span>
+        </h1>
+        <p class="hero__tagline">Música, tragos y la noche que no quieres que termine.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#menu">Ver menú</a>
+          <a class="btn btn--ghost" href="#redes">Síguenos</a>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#club" aria-label="Bajar">&#8595;</a>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Cerveza</span><span>★</span><span>Tequila</span><span>★</span><span>Whiskey</span><span>★</span><span>Ron</span><span>★</span><span>Vodka</span><span>★</span><span>Coctelería</span><span>★</span><span>Tacos</span><span>★</span><span>Botellas</span><span>★</span>
+        <span>Cerveza</span><span>★</span><span>Tequila</span><span>★</span><span>Whiskey</span><span>★</span><span>Ron</span><span>★</span><span>Vodka</span><span>★</span><span>Coctelería</span><span>★</span><span>Tacos</span><span>★</span><span>Botellas</span><span>★</span>
+      </div>
+    </div>
+
+    <!-- ===== El club ===== -->
+    <section class="section club" id="club">
+      <div class="container club__grid">
+        <div class="club__text reveal">
+          <p class="eyebrow">Bienvenido al</p>
+          <h2 class="section__title">Revolver Club</h2>
+          <p>
+            Detrás de nuestras puertas de acero y la fachada de lámina iluminada en ámbar
+            está <strong>Tumbao</strong>: un club nocturno hecho para bailar, brindar y
+            pasarla bien con tu gente.
+          </p>
+          <p>
+            Tenemos barra completa con más de <strong>80 opciones</strong> entre cervezas,
+            tequilas, whiskeys, ron, vodka y coctelería, servicio de botella para tu mesa
+            y antojitos de la casa como los <strong>Nachos Revolver</strong> y nuestras órdenes de tacos.
+          </p>
+          <ul class="features">
+            <li><span class="features__icon">🍾</span>Servicio de botella</li>
+            <li><span class="features__icon">🍸</span>Coctelería y promos 2x1</li>
+            <li><span class="features__icon">🌮</span>Tacos y botanas</li>
+            <li><span class="features__icon">🎶</span>Música y ambiente</li>
+          </ul>
+        </div>
+        <div class="club__media reveal">
+          <img src="assets/img/fachada.jpg" alt="Entrada de Tumbao Revolver Club con letrero amarillo iluminado" loading="lazy" width="1600" height="892">
+          <div class="club__badge"><img src="assets/img/logo-512.jpg" alt="Logo de Tumbao Revolver Club" loading="lazy" width="512" height="512"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Menú ===== -->
+    <section class="section menu" id="menu">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">La carta</p>
+          <h2 class="section__title">Menú</h2>
+          <p class="section__lead">Precios en pesos mexicanos (MXN). Sujetos a cambio sin previo aviso.</p>
+        </div>
+
+        <div class="menu__tabs" role="tablist" aria-label="Categorías del menú" id="menu-tabs"></div>
+        <div class="menu__panels" id="menu-panels"></div>
+
+        <div class="menu__download reveal">
+          <a class="btn btn--primary" href="assets/menu-carta.pdf" target="_blank" rel="noopener">Descargar menú (PDF)</a>
+          <button class="btn btn--ghost" type="button" id="open-menu-img">Ver carta completa</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Galería ===== -->
+    <section class="section gallery" id="galeria">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Así se vive</p>
+          <h2 class="section__title">Galería</h2>
+        </div>
+        <div class="gallery__grid">
+          <button class="gallery__item gallery__item--wide reveal" data-full="assets/img/fachada.jpg" data-alt="Fachada de Tumbao Revolver Club">
+            <img src="assets/img/fachada.jpg" alt="Fachada de Tumbao Revolver Club" loading="lazy">
+            <span>La entrada</span>
+          </button>
+          <button class="gallery__item reveal" data-full="assets/img/logo.jpg" data-alt="Logo de Tumbao Revolver Club">
+            <img src="assets/img/logo-512.jpg" alt="Logo de Tumbao Revolver Club" loading="lazy">
+            <span>Tumbao</span>
+          </button>
+          <button class="gallery__item reveal" data-full="assets/img/tacos.jpg" data-alt="Órdenes de tacos">
+            <img src="assets/img/tacos.jpg" alt="Órdenes de tacos" loading="lazy">
+            <span>Tacos de la casa</span>
+          </button>
+          <button class="gallery__item gallery__item--tall reveal" data-full="assets/img/menu-1.jpg" data-alt="Carta de Tumbao Revolver Club">
+            <img src="assets/img/menu-1.jpg" alt="Carta de Tumbao Revolver Club" loading="lazy">
+            <span>La carta</span>
+          </button>
+        </div>
+        <p class="gallery__more reveal">Más fotos y videos de nuestras noches en <a href="#redes">nuestras redes</a>.</p>
+      </div>
+    </section>
+
+    <!-- ===== Redes ===== -->
+    <section class="section social" id="redes">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">No te pierdas nada</p>
+          <h2 class="section__title">Síguenos</h2>
+          <p class="section__lead">Eventos, promociones y lo mejor de cada noche se anuncian primero en nuestras redes.</p>
+        </div>
+        <div class="social__grid">
+          <a class="social__card reveal" href="https://www.instagram.com/tumbao.slw?jplx=czl3dnQ4ZWZqb3pj" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.3.8-.4.4-.6.8-.8 1.3-.2.4-.3 1-.4 2.1C2.6 9.9 2.6 10.3 2.6 12s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.3.4.4.8.6 1.3.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.3-.8.4-.4.6-.8.8-1.3.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1-.2-.5-.4-.9-.8-1.3-.4-.4-.8-.6-1.3-.8-.4-.2-1-.3-2.1-.4C15.5 4 15.1 4 12 4zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8a3.1 3.1 0 1 0 0-6.2 3.1 3.1 0 0 0 0 6.2zm6.2-8.2a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0z"/></svg>
+            <span class="social__name">Instagram</span>
+            <span class="social__handle">@tumbao.slw</span>
+            <span class="social__cta">Seguir →</span>
+          </a>
+          <a class="social__card reveal" href="https://www.tiktok.com/@tumbaoslw?_r=1&amp;_t=ZS-9BZWKlLcrvp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 2h-3.3v13.2a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9a6.3 6.3 0 1 0 5.3 6.2V8.6a7.7 7.7 0 0 0 4.4 1.4V6.7a4.4 4.4 0 0 1-4.4-4.4V2z"/></svg>
+            <span class="social__name">TikTok</span>
+            <span class="social__handle">@tumbaoslw</span>
+            <span class="social__cta">Ver videos →</span>
+          </a>
+          <a class="social__card reveal" href="https://www.facebook.com/profile.php?id=61596132505426&amp;mibextid=wwXIfr" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21.9v-7.4H16l.4-2.9h-2.9V9.8c0-.8.2-1.4 1.4-1.4h1.6V5.8c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.1H7.8v2.9h2.6v7.4C5.6 21.1 2 17 2 12 2 6.5 6.5 2 12 2s10 4.5 10 10c0 5-3.6 9.1-8.5 9.9z"/></svg>
+            <span class="social__name">Facebook</span>
+            <span class="social__handle">Tumbao Revolver Club</span>
+            <span class="social__cta">Me gusta →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Visítanos ===== -->
+    <section class="section visit" id="visitanos">
+      <div class="container visit__grid">
+        <div class="reveal">
+          <p class="eyebrow">Te esperamos</p>
+          <h2 class="section__title">Visítanos</h2>
+          <p class="visit__text">
+            Busca el letrero amarillo y las puertas de acero. Para horarios, reservaciones de mesa
+            y eventos de la semana, escríbenos por mensaje directo en Instagram o Facebook.
+          </p>
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="https://www.instagram.com/tumbao.slw?jplx=czl3dnQ4ZWZqb3pj" target="_blank" rel="noopener">Reservar por DM</a>
+            <a class="btn btn--ghost" href="https://www.facebook.com/profile.php?id=61596132505426&amp;mibextid=wwXIfr" target="_blank" rel="noopener">Mensaje en Facebook</a>
+          </div>
+        </div>
+        <ul class="visit__info reveal">
+          <li><strong>Mesas y botellas</strong><span>Reserva tu mesa con anticipación por DM.</span></li>
+          <li><strong>Mayores de 18</strong><span>Presenta identificación oficial vigente en la entrada.</span></li>
+          <li><strong>Pago</strong><span>Consulta métodos de pago al hacer tu reservación.</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="assets/img/logo-512.jpg" alt="Tumbao Revolver Club" width="96" height="96" loading="lazy">
+      <div class="footer__social">
+        <a href="https://www.instagram.com/tumbao.slw?jplx=czl3dnQ4ZWZqb3pj" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@tumbaoslw?_r=1&amp;_t=ZS-9BZWKlLcrvp" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.facebook.com/profile.php?id=61596132505426&amp;mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+      </div>
+      <p class="footer__legal">Prohibida la venta de bebidas alcohólicas a menores de edad. Disfruta con responsabilidad.</p>
+      <p class="footer__copy">© <span id="year"></span> Tumbao Revolver Club</p>
+    </div>
+  </footer>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox__close" aria-label="Cerrar">×</button>
+    <img alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
