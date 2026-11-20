@@ -230,9 +230,6 @@
     document.body.style.overflow = "";
     if (lastFocus) lastFocus.focus();
   }
-  document.querySelectorAll(".gallery__item").forEach(function (b) {
-    b.addEventListener("click", function () { openLb(b.dataset.full, b.dataset.alt); });
-  });
   var menuBtn = document.getElementById("open-menu-img");
   if (menuBtn) menuBtn.addEventListener("click", function () { openLb("assets/img/menu-1.jpg", "Carta completa de Tumbao Revolver Club"); });
   lb.addEventListener("click", function (e) { if (e.target === lb || e.target.closest(".lightbox__close")) closeLb(); });
